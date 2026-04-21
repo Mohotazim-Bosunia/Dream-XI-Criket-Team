@@ -1,0 +1,152 @@
+[
+  {
+    "playerId": "P001",
+    "name": "Shakib Al-Hassan",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co/sJgDTWMm/tamimiqbal-cropped-1d5fd43rf14s31qjfegrfd6pt2.jpg",
+    "role": "All-Rounder",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Left-arm medium",
+    "biddingPrice": "$17 Cr"
+  },
+  {
+    "playerId": "P002",
+    "name": "Virat Kohli",
+    "country": "India",
+    "image": "https://i.ibb.co/9HWh7jrq/Kane-Williamson-Silent-Contender-in-World-Cup-1024x672.jpg",
+    "role": "Batsman",
+    "battingType": "Left-hand bat",
+    "bowlingType": "None",
+    "biddingPrice": "$14 Cr"
+  },
+  {
+    "playerId": "P003",
+    "name": "Masrafi Bin-Mortuza",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co/sJgDTWMm/tamimiqbal-cropped-1d5fd43rf14s31qjfegrfd6pt2.jpg",
+    "role": "Bowler",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm fast",
+    "biddingPrice": "$ 7Cr"
+  },
+  {
+    "playerId": "P004",
+    "name": "Cris Gayel",
+    "country": "West-Indies",
+    "image": "https://i.ibb.co/9HWh7jrq/Kane-Williamson-Silent-Contender-in-World-Cup-1024x672.jpg",
+    "role": "Batsman",
+    "battingType": "Left-hand bat",
+    "bowlingType": "None",
+    "biddingPrice": "$12 Cr"
+  },
+  {
+    "playerId": "P005",
+    "name": "Tamim Iqbal",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co/sJgDTWMm/tamimiqbal-cropped-1d5fd43rf14s31qjfegrfd6pt2.jpg",
+    "role": "Batsman",
+    "battingType": "Left-hand bat",
+    "bowlingType": "None",
+    "biddingPrice": "$10 Cr"
+  },
+  {
+    "playerId": "P006",
+    "name": "Kane Williumson",
+    "country": "New Zealand",
+    "image": "https://i.ibb.co/9HWh7jrq/Kane-Williamson-Silent-Contender-in-World-Cup-1024x672.jpg",
+    "role": "Batsman",
+    "battingType": "Left-hand bat",
+    "bowlingType": "None",
+    "biddingPrice": "$13 Cr"
+  },
+  {
+    "playerId": "P007",
+    "name": "Mushfikur Rahman",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co/sJgDTWMm/tamimiqbal-cropped-1d5fd43rf14s31qjfegrfd6pt2.jpg",
+    "role": "Wiket-keeper",
+    "battingType": "Right-hand bat",
+    "bowlingType": "None",
+    "biddingPrice": "$ 7 Cr"
+  },
+  {
+    "playerId": "P008",
+    "name": "Mahmudullah Riyad",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co/9HWh7jrq/Kane-Williamson-Silent-Contender-in-World-Cup-1024x672.jpg",
+    "role": "All-Rounder",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm fast",
+    "biddingPrice": "$7 Cr"
+  },
+  {
+    "playerId": "P009",
+    "name": "Rashid Khan",
+    "country": "Afganishan",
+    "image": "https://i.ibb.co/sJgDTWMm/tamimiqbal-cropped-1d5fd43rf14s31qjfegrfd6pt2.jpg",
+    "role": "All-Rounder",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Left-arm legbreak",
+    "biddingPrice": "$11 Cr"
+  },
+  {
+    "playerId": "P010",
+    "name": "Malingga",
+    "country": "Sri Lanka",
+    "image": "https://i.ibb.co/9HWh7jrq/Kane-Williamson-Silent-Contender-in-World-Cup-1024x672.jpg",
+    "role": "Boller",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Fast-Boller",
+    "biddingPrice": "$9 Cr"
+  },
+  {
+    "playerId": "P011",
+    "name": "Mustafizur Rahman",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co/sJgDTWMm/tamimiqbal-cropped-1d5fd43rf14s31qjfegrfd6pt2.jpg",
+    "role": "Boller",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Fast-Boller",
+    "biddingPrice": "$12 Cr"
+  },
+  {
+    "playerId": "P012",
+    "name": "Taskin Ahamed",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co/9HWh7jrq/Kane-Williamson-Silent-Contender-in-World-Cup-1024x672.jpg",
+    "role": "Bowler",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Fast-Boller",
+    "biddingPrice": "$9 Cr"
+  },
+  {
+    "playerId": "P013",
+    "name": "Butler",
+    "country": "England",
+    "image": "https://i.ibb.co/sJgDTWMm/tamimiqbal-cropped-1d5fd43rf14s31qjfegrfd6pt2.jpg",
+    "role": "Wiket-keeper",
+    "battingType": "Right-hand bat",
+    "bowlingType": "None",
+    "biddingPrice": "$8 Cr"
+  },
+  {
+    "playerId": "P014",
+    "name": "Maxwell",
+    "country": "Australia",
+    "image": "https://i.ibb.co/9HWh7jrq/Kane-Williamson-Silent-Contender-in-World-Cup-1024x672.jpg",
+    "role": "All-Rounder",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Left-arm legbreak",
+    "biddingPrice": "$9 Cr"
+  },
+  {
+    "playerId": "P015",
+    "name": "Shahid Afridi",
+    "country": "Pakisthan",
+    "image": "https://i.ibb.co/sJgDTWMm/tamimiqbal-cropped-1d5fd43rf14s31qjfegrfd6pt2.jpg",
+    "role": "All-Rounder",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm legspin",
+    "biddingPrice": "$8 Cr"
+  }
+]
