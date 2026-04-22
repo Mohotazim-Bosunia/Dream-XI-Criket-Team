@@ -2,7 +2,7 @@ import React from "react";
 import navimage from "../../assets/logo.png";
 import dollarImg from "../../assets/dollar 1.png";
 
-const Navber = () => {
+const Navber = ({ balance }) => {
   return (
     <div>
       <div className="navbar bg-base-100 shadow-sm ">
@@ -12,7 +12,7 @@ const Navber = () => {
           </a>
         </div>
         <div className="flex justify-center items-center gap-2">
-          <span>6000000</span>
+          <span>${balance} cr</span>
           <span>coin</span>
           <img src={dollarImg} alt="Dollar" />
         </div>

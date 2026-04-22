@@ -9,13 +9,14 @@ const fetchplayers = async () => {
   const res = await fetch("players.json");
   return res.json();
 };
+const promisePlayers = fetchplayers();
 
 function App() {
-  const promisePlayers = fetchplayers();
-  const [toggle, settoggle] = useState(false);
+  const [toggle, settoggle] = useState(true);
+  const [balance, setBalance] = useState(250);
   return (
     <>
-      <Navber></Navber>
+      <Navber balance={balance}></Navber>
       <div className="flex justify-center gap-4">
         <button
           onClick={() => settoggle(true)}
@@ -35,7 +36,11 @@ function App() {
         <Suspense
           fallback={<span className="loading loading-bars loading-xl"></span>}
         >
-          <AvailablePlayers promisePlayers={promisePlayers}></AvailablePlayers>
+          <AvailablePlayers
+            promisePlayers={promisePlayers}
+            setBalance={setBalance}
+            balance={balance}
+          ></AvailablePlayers>
         </Suspense>
       ) : (
         <SelectedPlayers></SelectedPlayers>

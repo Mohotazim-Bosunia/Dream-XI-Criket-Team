@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import userImg from "../../assets/user 1.png";
 import flag from "../../assets/report 1.png";
-const AvailablePlayer = ({ player }) => {
+const AvailablePlayer = ({ player, setBalance, balance }) => {
   console.log(player);
   const { name, image, country, role, battingType, biddingPrice } = player;
 
@@ -40,9 +40,12 @@ const AvailablePlayer = ({ player }) => {
               <span>{battingType}</span>
             </div>
             <div className="flex justify-between">
-              <span>Price:${biddingPrice}</span>
+              <span>Price:{biddingPrice}</span>
               <button
-                onClick={() => setIsSelected(true)}
+                disabled={isSelected}
+                onClick={() => {
+                  (setIsSelected(true), setBalance(balance - biddingPrice));
+                }}
                 className="border border-indigo-400 border-solid rounded-md px-2 py-1 ml-4 text-sm"
               >
                 {isSelected === true ? "Selected" : "Choose Player"}
