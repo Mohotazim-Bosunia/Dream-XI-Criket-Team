@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import userImg from "../../assets/user 1.png";
 import flag from "../../assets/report 1.png";
 const AvailablePlayer = ({ player }) => {
   console.log(player);
   const { name, image, country, role, battingType, biddingPrice } = player;
+
+  const [isSelected, setIsSelected] = useState(false);
   return (
     <div>
       <div>
@@ -39,8 +41,11 @@ const AvailablePlayer = ({ player }) => {
             </div>
             <div className="flex justify-between">
               <span>Price:${biddingPrice}</span>
-              <button className="border border-indigo-400 border-solid rounded-md px-2 py-1 ml-4 text-sm">
-                Choose Player
+              <button
+                onClick={() => setIsSelected(true)}
+                className="border border-indigo-400 border-solid rounded-md px-2 py-1 ml-4 text-sm"
+              >
+                {isSelected === true ? "Selected" : "Choose Player"}
               </button>
             </div>
           </div>
