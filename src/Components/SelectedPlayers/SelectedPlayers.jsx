@@ -1,10 +1,14 @@
 import React from "react";
+import SelectedPlayer from "./SelectedPlayer";
 
-const SelectedPlayers = () => {
+const SelectedPlayers = ({ perchasesPlayer }) => {
+  // console.log(perchasesPlayer);
   return (
     <div>
       <h1>Selected Players</h1>
-      <button className="btn btn-accent">Accent</button>
+      {perchasesPlayer.map((selectPlayer) => (
+        <SelectedPlayer selectPlayer={selectPlayer}></SelectedPlayer>
+      ))}
     </div>
   );
 };

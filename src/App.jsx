@@ -14,6 +14,8 @@ const promisePlayers = fetchplayers();
 function App() {
   const [toggle, settoggle] = useState(true);
   const [balance, setBalance] = useState(250);
+  const [perchasesPlayer, setParchases] = useState([]);
+  // console.log(perchasesPlayer);
   return (
     <>
       <Navber balance={balance}></Navber>
@@ -40,10 +42,12 @@ function App() {
             promisePlayers={promisePlayers}
             setBalance={setBalance}
             balance={balance}
+            perchasesPlayer={perchasesPlayer}
+            setParchases={setParchases}
           ></AvailablePlayers>
         </Suspense>
       ) : (
-        <SelectedPlayers></SelectedPlayers>
+        <SelectedPlayers perchasesPlayer={perchasesPlayer}></SelectedPlayers>
       )}
     </>
   );

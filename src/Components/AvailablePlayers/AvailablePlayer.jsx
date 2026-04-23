@@ -1,11 +1,22 @@
 import React, { useState } from "react";
 import userImg from "../../assets/user 1.png";
 import flag from "../../assets/report 1.png";
-const AvailablePlayer = ({ player, setBalance, balance }) => {
-  console.log(player);
+const AvailablePlayer = ({
+  player,
+  setBalance,
+  balance,
+  perchasesPlayer,
+  setParchases,
+}) => {
+  // console.log(player);
   const { name, image, country, role, battingType, biddingPrice } = player;
 
   const [isSelected, setIsSelected] = useState(false);
+  const handleChoseBtn = () => {
+    setIsSelected(true);
+    setBalance(balance - biddingPrice);
+    setParchases([...perchasesPlayer, player]);
+  };
   return (
     <div>
       <div>
@@ -44,7 +55,7 @@ const AvailablePlayer = ({ player, setBalance, balance }) => {
               <button
                 disabled={isSelected}
                 onClick={() => {
-                  (setIsSelected(true), setBalance(balance - biddingPrice));
+                  handleChoseBtn();
                 }}
                 className="border border-indigo-400 border-solid rounded-md px-2 py-1 ml-4 text-sm"
               >

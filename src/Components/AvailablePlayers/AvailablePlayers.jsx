@@ -1,9 +1,15 @@
 import React, { use } from "react";
 import AvailablePlayer from "./AvailablePlayer";
 
-const AvailablePlayers = ({ promisePlayers, setBalance, balance }) => {
+const AvailablePlayers = ({
+  promisePlayers,
+  setBalance,
+  balance,
+  perchasesPlayer,
+  setParchases,
+}) => {
   const players = use(promisePlayers);
-  console.log(players);
+  // console.log(players);
   return (
     <div>
       <div>Available players:{players.length}</div>
@@ -14,6 +20,8 @@ const AvailablePlayers = ({ promisePlayers, setBalance, balance }) => {
             balance={balance}
             player={player}
             key={player.playerId}
+            perchasesPlayer={perchasesPlayer}
+            setParchases={setParchases}
           ></AvailablePlayer>
         ))}
       </div>
