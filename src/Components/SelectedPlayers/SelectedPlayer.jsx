@@ -1,8 +1,12 @@
-import React from "react";
-
-const SelectedPlayer = ({ selectPlayer }) => {
+import deleteimg from "../../assets/Vector.png";
+const SelectedPlayer = ({ selectPlayer, remove }) => {
   const { name, image, battingType } = selectPlayer;
   //console.log(selectPlayer);
+
+  const handleDlt = () => {
+    remove(selectPlayer);
+  };
+
   return (
     <div>
       <div className="flex gap-36">
@@ -18,7 +22,7 @@ const SelectedPlayer = ({ selectPlayer }) => {
               </div>
             </div>
             <div className="card-actions justify-end">
-              <button className="bg-blue-500">Watch</button>
+              <img onClick={() => handleDlt()} src={deleteimg} alt="" />
             </div>
           </div>
         </div>
