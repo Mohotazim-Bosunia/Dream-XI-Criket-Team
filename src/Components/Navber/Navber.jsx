@@ -5,16 +5,15 @@ import dollarImg from "../../assets/dollar 1.png";
 const Navber = ({ balance }) => {
   return (
     <div>
-      <div className="navbar bg-base-100 shadow-sm ">
+      <div className="navbar bg-base-100 shadow-sm flex justify-between">
         <div className="flex-1">
           <a className="btn btn-ghost text-xl">
-            <img className="w-10 h-10" src={navimage} alt="Logo" />
+            <img className="w-16 h-16" src={navimage} alt="Logo" />
           </a>
         </div>
-        <div className="flex justify-center items-center gap-2">
-          <span>${balance} cr</span>
-          <span>coin</span>
-          <img src={dollarImg} alt="Dollar" />
+        <div className="flex justify-center items-center gap-2 text-2xl font-bold">
+          <img className="w-8" src={dollarImg} alt="Dollar" />
+          <span>{balance} cr</span>
         </div>
       </div>
     </div>

@@ -22,46 +22,48 @@ function App() {
   };
   return (
     <>
-      <Navber balance={balance}></Navber>
+      <div className="m-6">
+        <Navber balance={balance}></Navber>
 
-      <div className="flex justify-between m-4">
-        <div className="font-bold text-2xl">
-          {toggle === true ? "Available Player" : "Selected Players"}
+        <div className="flex justify-between m-4">
+          <div className="font-bold text-2xl">
+            {toggle === true ? "Available Player" : "Selected Players"}
+          </div>
+          <div className="flex justify-center gap-4">
+            <button
+              onClick={() => settoggle(true)}
+              className="btn btn-accent bg-emerald-500 p-2 rounded-md"
+            >
+              Abailable
+            </button>
+            <button
+              onClick={() => settoggle(false)}
+              className="btn btn-accent bg-cyan-500 p-2 rounded-md"
+            >
+              Selected:{perchasesPlayer.length}
+            </button>
+          </div>
         </div>
-        <div className="flex justify-center gap-4">
-          <button
-            onClick={() => settoggle(true)}
-            className="btn btn-accent bg-emerald-500 p-2 rounded-md"
-          >
-            Abailable
-          </button>
-          <button
-            onClick={() => settoggle(false)}
-            className="btn btn-accent bg-cyan-500 p-2 rounded-md"
-          >
-            Selected:{perchasesPlayer.length}
-          </button>
-        </div>
-      </div>
 
-      {toggle === true ? (
-        <Suspense
-          fallback={<span className="loading loading-bars loading-xl"></span>}
-        >
-          <AvailablePlayers
-            promisePlayers={promisePlayers}
-            setBalance={setBalance}
-            balance={balance}
+        {toggle === true ? (
+          <Suspense
+            fallback={<span className="loading loading-bars loading-xl"></span>}
+          >
+            <AvailablePlayers
+              promisePlayers={promisePlayers}
+              setBalance={setBalance}
+              balance={balance}
+              perchasesPlayer={perchasesPlayer}
+              setParchases={setParchases}
+            ></AvailablePlayers>
+          </Suspense>
+        ) : (
+          <SelectedPlayers
             perchasesPlayer={perchasesPlayer}
-            setParchases={setParchases}
-          ></AvailablePlayers>
-        </Suspense>
-      ) : (
-        <SelectedPlayers
-          perchasesPlayer={perchasesPlayer}
-          remove={remove}
-        ></SelectedPlayers>
-      )}
+            remove={remove}
+          ></SelectedPlayers>
+        )}
+      </div>
     </>
   );
 }
